@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Waterline</title>
+  <meta name="description" content="Waterline is a personal budgeting tool, built and used by one person for their own accounts.">
+  <link rel="icon" type="image/png" href="assets/favicon-64.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <header class="hero">
+      <img src="assets/waterline-icon-256.png" alt="Waterline icon: a dashed level line above teal waves">
+      <div>
+        <h1>Waterline</h1>
+        <p class="tagline">A personal budgeting tool for staying afloat between paydays.</p>
+      </div>
+    </header>
+
+    <p>
+      Waterline works out the "waterline": how much money needs to stay in the bank to cover
+      the bills and planned spending due before the next paycheck. It tracks scheduled bills,
+      everyday spending, savings set aside for larger expenses, and debt, and sorts transactions
+      into categories.
+    </p>
+
+    <div class="card">
+      <strong>Personal use only.</strong>
+      Waterline is built and used by one person to manage their own accounts. It is not offered
+      to the public: there are no sign-ups, no customers and no other users.
+    </div>
+
+    <h2>How it connects to banks</h2>
+    <p>
+      Waterline uses <a href="https://plaid.com/how-we-handle-data/">Plaid</a> to read
+      transactions from the owner's own bank and card accounts. The connection is read-only:
+      Waterline cannot move money, make payments or change anything at the bank.
+    </p>
+
+    <h2>Where the data lives</h2>
+    <p>
+      Transactions are stored in a database on the owner's own computer, not on a server.
+      Plaid connection keys are kept in the computer's secure keychain. Nothing is sold or shared.
+      The <a href="privacy.html">privacy policy</a> has the details.
+    </p>
+
+    <footer>
+      <a href="privacy.html">Privacy policy</a>
+      <a href="https://github.com/meadowlark-bradsher">Contact</a>
+    </footer>
+  </main>
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Waterline privacy policy</title>
+  <meta name="description" content="How Waterline, a personal budgeting tool, handles financial data.">
+  <link rel="icon" type="image/png" href="assets/favicon-64.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <header class="hero">
+      <a href="./"><img src="assets/waterline-icon-256.png" alt="Waterline home"></a>
+      <div>
+        <h1>Privacy policy</h1>
+        <p class="tagline">Waterline</p>
+      </div>
+    </header>
+
+    <p class="updated">Effective November 25, 2026</p>
+
+    <p>
+      Waterline is a personal budgeting tool. It is built and used by one person, its owner,
+      to manage their own bank and card accounts. It is not offered to anyone else, so the only
+      person whose data it handles is the owner.
+    </p>
+
+    <h2>What data Waterline collects</h2>
+    <ul>
+      <li>Transactions from the owner's own accounts: date, amount, description and merchant.</li>
+      <li>Account details needed to sort those transactions: account name, type (such as checking
+        or credit) and the last few digits of the account number.</li>
+    </ul>
+    <p>
+      Waterline reads this data through <a href="https://plaid.com/">Plaid</a>. It asks Plaid only
+      for transaction data. It does not collect login credentials: the owner signs in to each bank
+      through Plaid or the bank itself, and Waterline never sees the password.
+    </p>
+
+    <h2>How it is used</h2>
+    <p>
+      The data is used only to show the owner their own spending, income, bills and balances.
+      The connection is read-only: Waterline cannot move money or make changes at the bank.
+    </p>
+
+    <h2>Where it is stored</h2>
+    <ul>
+      <li>Transactions are stored in a database file on the owner's own computer. There is no
+        Waterline server and no cloud copy.</li>
+      <li>The keys that let Waterline fetch new transactions from Plaid are stored in the
+        computer's encrypted keychain (macOS Keychain), not in files.</li>
+    </ul>
+
+    <h2>Sharing</h2>
+    <p>
+      Waterline does not sell, rent or share financial data with anyone, and does no advertising
+      or tracking. Data leaves the owner's computer only in these cases, all at the owner's own
+      choice:
+    </p>
+    <ul>
+      <li><strong>Plaid</strong>, which retrieves the data from the bank. Plaid's handling is
+        described in its <a href="https://plaid.com/legal/#end-user-privacy-policy">End User
+        Privacy Policy</a>.</li>
+      <li><strong>An AI assistant the owner uses</strong> to ask questions about their own
+        finances. When the owner asks a question, the answers Waterline looks up are sent to that
+        assistant under the owner's own account.</li>
+    </ul>
+
+    <h2>Keeping and deleting data</h2>
+    <p>
+      Data is kept until the owner deletes it. Disconnecting a bank in Waterline also removes the
+      connection at Plaid, so no further data is fetched. Access can also be revoked from the
+      bank's own security settings or through <a href="https://my.plaid.com/">Plaid Portal</a>.
+    </p>
+
+    <h2>Security</h2>
+    <p>
+      The database stays on a computer with full-disk encryption and a login password. Plaid
+      connection keys are encrypted by the operating system. Imported bank records are kept
+      write-once, so they cannot be edited after import.
+    </p>
+
+    <h2>Changes and contact</h2>
+    <p>
+      If this policy changes, the new version will be posted here with a new effective date.
+      Questions can be sent through the owner's
+      <a href="https://github.com/meadowlark-bradsher">GitHub profile</a>.
+    </p>
+
+    <footer>
+      <a href="./">Home</a>
+      <a href="https://github.com/meadowlark-bradsher">Contact</a>
+    </footer>
+  </main>
+</body>
+</html>
